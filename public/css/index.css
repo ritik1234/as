@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#add-product .input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 0px 0px 5px 0px;
+    padding: 5px;
+}
+  
+#add-product .location {
+    display:flex;
+}
+  
+#add-product .location input{
+    width: 80%;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    #add-product .location input{
+        width: 90%;
+      }   
+}
+  
+#add-product {
+    margin: 0 auto;
+}
+  
+#add-product-btn {
+    display: block;
+    padding: 5px;
+    color: white;
+    background-color: dodgerblue;
+    border: 0px; 
+    cursor: pointer;
+    margin: 0 auto;
+}
+  
+#remove-location {
+    background-color: red;
+    border: 0;
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+}
+  
+#add-more-location {
+    margin: 10px;
+    background-color: tomato;
+    border: 0;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+  
+#functionalities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #functionalities .function{
+    font-size: 25px;
+    padding: 5px;
+    color: #143d59;
+    font-weight: bold;
+    background: #f4b41a;
+    margin: 10px;
+    cursor: pointer;
+  }  
+  
+  #searched-product {
+    width: 100%;
+    height: 40px;
+    border: 1px solid grey;
+    padding: 2px;
+    outline: none;
+  }
+
+  #suggestions {
+    max-height: 100vh;
+    overflow: scroll;
+  }
+  
+  #suggestions .suggestion {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  #suggestions .suggestion .suggestion-title {
+      font-size: 15px;
+      font-weight: bold;
+  }
+
+  #suggestions .suggestion .stock-qty{
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  #suggestions .suggestion .locations {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  #racks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid blue;
+  }
+  
+  #racks .rack {
+    margin-bottom: 4px;
+    background-color: #f49f1c;
+    color: #213970;
+    font-weight: bold;
+    width: 24%;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  #products{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #products .product{
+    padding: 5px;
+    background-color: white;
+    border-bottom: 1px solid black;
+  }
+  
+  #products .product .product-title{
+    font-weight: bold;
+  }
+  
+  #products .product .product-qty{
+    font-size: 15px;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  #products .product .product-mrp{
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+  }
+
+  
+/* SALES INVOICE STARTS */
+
+  #sales-invoice {
+    margin-top: 10px;
+  }
+
+  #sales-invoice-table{
+    margin-top: 10px;
+  }
+  
+  #sales-invoice-table-headers{
+    display:flex;
+    
+  }
+  
+  #sales-invoice-table-headers .sales-invoice-table-header {
+    background: dodgerblue;
+    color: white;
+    padding:5px;
+    width: 10%;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+  
+  #sales-invoice-table-headers .sales-invoice-product-name-header{
+    width: 40%;
+  }
+  
+  #sales-invoice-table-rows{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #sales-invoice-table-rows .table-row{
+    display:flex;
+  }
+  
+  #sales-invoice-table-rows .sales-product-name{
+    width: 40%;
+  }
+  #sales-invoice-table-rows .sales-product-qty{
+  width: 10%;  
+  }
+  #sales-invoice-table-rows .sales-product-mrp{
+    width: 10%;
+  }
+  #sales-invoice-table-rows .sales-product-discount{
+  width: 10%;  
+  }
+  
+  #sales-invoice-table-rows .sales-product-price{
+  width: 10%;  
+  }
+  
+  #sales-invoice-table-rows .sales-product-total-price{
+  width: 10%;  
+  }
+  
+  #sales-invoice-product-search {
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    }
+    
+  #sales-invoice-product-suggestions{
+      background-color: white;
+    }
+    
+  #sales-invoice-product-suggestions .suggestion {
+      cursor: pointer;
+      padding: 5px;
+      border-bottom: 1px solid lightgray;
+      margin: 1px;
+    }
+    
+
+#today-sales {
+      position: relative;
+}
+    
+#today-sales .today-sale {
+      margin: 10px;
+      border: 1px solid lightgrey;
+      padding:2px;
+}
+    
+#total-today-sales-amount {
+      background: dodgerblue;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+}
+
+#today-sales-and-profit{
+     background: dodgerblue;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      position: sticky; 
+      top: 0;
+}  
